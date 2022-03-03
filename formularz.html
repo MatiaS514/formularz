@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            #conteiner{
+                width: 50%;
+                margin-left:25%;
+                margin-top: 10%;
+                padding:3%;
+                box-sizing: border-box;
+                background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+                background-size: 1800% 1800%;
+
+                -webkit-animation: rainbow 1s ease infinite;
+                -z-animation: rainbow 1s ease infinite;
+                -o-animation: rainbow 1s ease infinite;
+                animation: rainbow 1s ease infinite;}
+
+                @-webkit-keyframes rainbow {
+                    0%{background-position:0% 82%}
+                    50%{background-position:100% 19%}
+                    100%{background-position:0% 82%}
+                }
+                @-moz-keyframes rainbow {
+                    0%{background-position:0% 82%}
+                    50%{background-position:100% 19%}
+                    100%{background-position:0% 82%}
+                }
+                @-o-keyframes rainbow {
+                    0%{background-position:0% 82%}
+                    50%{background-position:100% 19%}
+                    100%{background-position:0% 82%}
+                }
+                @keyframes rainbow { 
+                    0%{background-position:0% 82%}
+                    50%{background-position:100% 19%}
+                    100%{background-position:0% 82%}
+                            }
+            #form{
+                margin: auto;
+            }
+            form{
+                font-size: 25px;
+            }
+            #email{
+                height:28px;
+                width:80%;
+                background-color: aqua;
+                color: blue;
+                font-size: 16px;
+                float: right;
+            }
+            #pass{
+                height:28px;
+                width:80%;
+                background-color: aqua;
+                color: blue;
+                font-size: 16px;
+                float: right;
+            }
+            #check{
+                height:28px;
+                width: 28px;;
+                font-size: 16px;
+            }
+            #sub{
+                width: 90px;
+                height: 30px;
+                background-color: aqua;
+                color: blue;
+                font-size: 16px;
+            }
+            #res{
+                width: 180px;
+                height: 30px;
+                background-color: aqua;
+                color: blue;
+                font-size: 16px;
+                float:right;
+            }  
+            @media only screen and (max-width:600px){
+                #email{
+                height:28px;
+                width:50%;
+                background-color: aqua;
+                color: blue;
+                font-size: 16px;
+            }
+            #pass{
+                height:28px;
+                width:50%;
+                background-color: aqua;
+                color: blue;
+                font-size: 16px;
+            }
+            #sub{
+                width: 40%;
+                height: 30px;
+                background-color: aqua;
+                color: blue;
+                font-size: 16px;
+            }
+            #res{
+                width: 40%;
+                height: 30px;
+                background-color: aqua;
+                color: blue;
+                font-size: 16px;
+                float:right;
+            } 
+        }
+        </style>
+    </head>
+    <body><div id="conteiner"><div id="form">
+        <form>
+            <center><b>Zaloguj się</b></center>
+           <p>Login<input type="text" placeholder="Login. Nikomu nie podawaj!" id="email"> </p>
+            <p>Hasło<input type="password" placeholder="Password. Nikomu nie podawaj!" id="pass">  </p>
+            <p>
+                <input type="checkbox" id="check">
+                <label for="check">Jestem robotem</label>
+            </p>
+            <input type="submit" value="Potwierdź" id="sub"> 
+            <input type="reset" value="Przywróć domyślne" id="res"/>
+        </form>
+        </div>
+        </div>
+    </body>
+</html>
